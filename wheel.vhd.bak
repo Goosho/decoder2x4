@@ -1,0 +1,111 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity wheel is 
+	port(
+	
+			
+		  ssd1,ssd2,ssd3,ssd4: out std_logic_vector(6 downto 0)
+		  led: out std_logic_vector(7 downto 0);
+	);
+	
+	
+end wheel;
+
+architecture bhv of wheel is 
+		signal dout: out std_logic_vector(7 downto 0);num: in std_logic_vector(15 downto 0);
+	begin 
+		case num(3 downto 0) is
+				when "0001" =>ssd1= "1111001" ;
+				when "0010" =>ssd1="0100100" ;
+				when "0011" =>ssd1="0110000" ;
+				when "0100" =>ssd1= "0011001";
+				when "0101" =>ssd1="0010010" ;
+				when "0110" =>ssd1= "0000010" ;
+				when "0111" =>ssd1="1111000" ;
+				when "1000" =>ssd1="0000000";
+				when "1001" =>ssd1="0011000";
+				when "1010" =>ssd1= "0001000" ;
+				when "1011" =>ssd1=	 "0000000" ;
+				when "1100" =>ssd1= "1000110" ;
+				when "1101" =>ssd1= "1000000" ;
+				when "1110" =>ssd1="0000110";
+				when "1111" =>ssd1="0001110";
+				when "0000" => ssd1="1000000";
+		end case;
+		
+		
+		
+		
+		case num(7 downto 4) is
+				when "0001" =>ssd2= "1111001" ;
+				when "0010" =>ssd2="0100100" ;
+				when "0011" =>ssd2="0110000" ;
+				when "0100" =>ssd2= "0011001";
+				when "0101" =>ssd2="0010010" ;
+				when "0110" =>ssd2= "0000010" ;
+				when "0111" =>ssd2="1111000" ;
+				when "1000" =>ssd2="0000000";
+				when "1001" =>ssd2="0011000";
+				when "1010" =>ssd2= "0001000" ;
+				when "1011" =>ssd2=	 "0000000" ;
+				when "1100" =>ssd2= "1000110" ;
+				when "1101" =>ssd2= "1000000" ;
+				when "1110" =>ssd2="0000110";
+				when "1111" =>ssd2="0001110";
+				when "0000" => ssd2="1000000";
+				
+		end case;
+		
+		
+		
+		case num(11 downto 8) is
+				when "0001" =>ssd3== "1111001" ;			when "0010" =>ssd3="0100100" ;
+				when "0011" =>ssd3="0110000" ;			when "0100" =>ssd3= "0011001";
+				when "0101" =>ssd3="0010010" ;			when "0110" =>ssd3= "0000010" ;
+				when "0111" =>ssd3="1111000" ;			when "1000" =>ssd3="0000000";			
+				when "1001" =>ssd3="0011000";				when "1010" =>ssd3= "0001000" ;
+				when "1011" =>ssd3=	 "0000000" ;		when "1100" =>ssd3= "1000110" ;
+				when "1101" =>ssd3= "1000000" ;			when "1110" =>ssd3= "0000110";
+				when "1111" =>ssd3="0001110";				when "0000" => ssd3="1000000";
+		end case;
+		
+		
+		
+		case num(15 downto 12) is
+				when "0001" =>ssd4= "1111001" ;
+				when "0010" =>ssd4="0100100" ;			when "0011" =>ssd4="0110000" ;
+				when "0100" =>ssd4= "0011001";				when "0101" =>ssd4="0010010" ;				
+				when "0110" =>ssd4= "0000010" ;
+				when "0111" =>ssd4="1111000" ;				when "1000" =>ssd4="0000000";
+				when "1001" =>ssd4="0011000";				when "1010" =>ssd4= "0001000" ;
+				when "1011" =>ssd4= "0000000" ;	when "1100" =>ssd4= "1000110" ;
+				when "1101" =>ssd4= "1000000" 				when "1110" =>ssd4="0000110";
+				when "1111" =>ssd4="0001110";when "0000" => ssd4="1000000";
+				
+		end case;
+		
+		
+		while 1 loop
+						
+			dout<="00000001";
+			dout<="00000010";
+			dout<="00000100";
+			dout<="00001000";
+			dout<="00010000";
+			dout<="00100000";
+			dout<="01000000";
+			dout<="10000000";
+							
+		end loop;
+		
+		process is
+			begin
+					while 1  loop
+							num<= num+1;	
+					end loop;
+		end process;
+						
+						
+	end bhv;

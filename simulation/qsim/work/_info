@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\goosh\Documents\Bce\semester_5\CoA\Lab\decoder2x4\simulation\qsim
+vdecoder2x4
+Z1 !s100 I^B^_i1mW>G9;=hWklUN82
+Z2 I?b<U7];5TFA:S_ACGnNo60
+Z3 VEEhb<Hn9I>cRK@f=[[CiQ2
+Z4 dC:\Users\goosh\Documents\Bce\semester_5\CoA\Lab\decoder2x4\simulation\qsim
+Z5 w1569648863
+Z6 8decoder2x4.vo
+Z7 Fdecoder2x4.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|decoder2x4.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1569648864.917000
+Z12 !s107 decoder2x4.vo|
+!s101 -O0
+vdecoder2x4_vlg_check_tst
+!i10b 1
+Z13 !s100 VXRLPER3o2[lmmjl=L9_c3
+Z14 IVdUJ>Bm>RijhAIGUma0O20
+Z15 VSkLQB<NjP8D5Sk?RCIW<32
+R4
+Z16 w1569648861
+Z17 8Waveform1.vwf.vt
+Z18 FWaveform1.vwf.vt
+L0 57
+R8
+r1
+!s85 0
+31
+Z19 !s108 1569648865.194000
+Z20 !s107 Waveform1.vwf.vt|
+Z21 !s90 -work|work|Waveform1.vwf.vt|
+!s101 -O0
+R10
+vdecoder2x4_vlg_sample_tst
+!i10b 1
+Z22 !s100 IlD@i=oe400enN=R@DdB83
+Z23 IVC8XdclU[NJU=jEWk1FPg3
+Z24 VT404KRNH<aSLUFkfOXV1c1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vdecoder2x4_vlg_vec_tst
+!i10b 1
+!s100 @`=Y[;nNFBBcNiZHPWmKa2
+IB5<zJX>11Wl`Jof_4hhTT0
+Z25 V@ijQdceUT010YW=2GQcRh3
+R4
+R16
+R17
+R18
+Z26 L0 205
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
